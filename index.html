@@ -83,7 +83,8 @@ document.onmousemove = function(e) {
 
 //горячие клавиши
 document.body.onkeydown = function(e){
-	if(e.shiftKey)shift = 8;
+	//if(e.shiftKey)shift = 8;
+	if(e.keyCode==32)shift = 8;
 	if(e.keyCode==80)paus();
 	if(e.keyCode==82)res();
 }
